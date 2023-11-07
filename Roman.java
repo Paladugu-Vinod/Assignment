@@ -21,7 +21,7 @@ public class Roman
       return 1000;   
     return -1;   
   }     
-  int convertRomanToInt(String s)   
+  int RomanToInt(String s)   
   {     
     int total = 0;   
     for (int i=0; i<s.length(); i++)   
@@ -48,8 +48,8 @@ public class Roman
   }    
   public static void main(String args[])   
   {   
-    Roman ob = new Roman();  
-    String romanStr= "VI";   
-    System.out.println("The corresponding Integer value is: "+ob.convertRomanToInt(romanStr));   
+    Roman obj = new Roman();  
+    String roman= "VI";   
+    System.out.println(obj.RomanToInt(roman));   
   }   
 }  

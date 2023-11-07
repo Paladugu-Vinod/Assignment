@@ -50,6 +50,7 @@ public class Roman
   {   
     Roman obj = new Roman();  
     String roman= "VI";   
-    System.out.println(obj.RomanToInt(roman));   
+    int result=obj.RomanToInt(roman);
+    System.out.println(result);   
   }   
 }  

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <style>
+        h2{
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 30px;
+        }
+        select {
+            width: 100%;
+            padding: 16px 20px;
+            border: 1px solid #574e4e;
+            border-radius: 4px;
+            /*background-color: rgb(123, 123, 128);*/
+        }
+
+        input[type=text]:focus {
+            border: 3px solid #555;
+        }
+
+        input[type=email]:focus {
+            border: 3px solid #555;
+        }
+
+        input[type=tel]:focus {
+            border: 3px solid #555;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=tel] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #574e4e;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            background-color: #04aa39;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        input[type=reset] {
+            background-color: #0444aa;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        div {
+            border: 2px;
+            border-radius: 5px;
+            background-color: rgb(215, 247, 247);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Survey Form</h2>
+    <div>
+        <form action="https://httpbin.org/get" method="get">
+            <label for="name">First Name : &nbsp;</label>
+            <input type="text" id="name" placeholder="Enter First Name">
+            <br>
+            <br>
+            <label for="name">Last Name : &nbsp;</label>
+            <input type="text" id="name" placeholder="Enter Last Name">
+            <br>
+            <br>
+            <label for="birthday">Date of Birth:&nbsp; </label>
+            <input type="date" id="birthday" name="birthday">
+            <br>
+            <br>
+            <label for="country">Country:&nbsp; </label>
+            <select name="country" id="country">
+                <option value="Quant">Select</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Australia">Australia</option>
+            </select>
+            <br>
+            <br>
+            <label for="Gender">Gender:&nbsp; </label>
+            <input type="radio" id="Male" name="Gender">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="Gender">
+            <label for="Female">Female</label>
+            <br>
+            <br>
+            <label for="Profession">Profession:&nbsp; </label>
+            <select name="Proff" id="Proff">
+                <option value="Proff">Select</option>
+                <option value="Student">Student</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Bank Employee">Bank Employee</option>
+            </select>
+            <br>
+            <br>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <br>
+            <br>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter mobile number">
+            <br>
+            <br>
+            <input type="submit" value="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="reset">
+        </form>
+    </div>
+</body>
+
+</html>
